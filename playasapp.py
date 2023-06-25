@@ -37,7 +37,7 @@ def get_weather_data():
     end_date = input("Please enter the end date (YYYY-MM-DD): ")
     url = f"https://api.meteomatics.com/{start_date}T00:00:00Z--{end_date}T00:00:00Z:PT1H/t_2m:C/{user_lat},{user_lon}/html"
     params = {
-        "apikey": "Your API Key"
+        "apikey": "Your API Key goes here"
     }
     response = requests.get(url, params=params)
 
